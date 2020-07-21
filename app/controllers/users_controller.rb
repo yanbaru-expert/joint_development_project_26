@@ -7,6 +7,10 @@ class UsersController < ApplicationController
     User.create(user_params)
   end
 
+  def index
+    @users = User.all
+  end
+
   private
 
   def user_params
