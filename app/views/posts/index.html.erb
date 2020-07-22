@@ -3,5 +3,6 @@
 <% @posts.each do |post| %>
 <p>
   <%= post.title %>
+  <%= link_to "詳細",post_path(post.id) %>
 </p>
 <% end %>
