@@ -1,0 +1,6 @@
+<p>新規タスク登録</p>
+<%= form_with model: @task, local: true do |f| %>
+  <p>タスク名：<%= f.text_field :name %></p>
+  <p>詳細：<%= f.text_area :detail %></p>
+  <%= f.submit "送信" %>
+<% end %>
